@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Librarian Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="login-panel">
+      <header class="gheader">
+        <p>FHOJ Library</p>
+
+        <div class="headings">
+          <h1>Library Management System</h1>
+        </div>
+        <div class="home-link-cont">
+          <a href="./index.html">Home</a>
+        </div>
+      </header>
+
+      <div class="bg-img">
+        <!-- background image goes here -->
+      </div>
+
+      <form id="my-form" class="my-form">
+        <div class="login-icon-cont">
+          <i class="fa-solid fa-chart-simple"></i>
+          <h1>Librarian Login</h1>
+        </div>
+        <div class="username">
+          <label for="username">Username:</label>
+          <input
+            type="text"
+            id="username"
+            placeholder="Kemi Wellington"
+            name="username"
+            required
+          />
+        </div>
+        <div class="passwrd">
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            id="password"
+            placeholder="*******"
+            name="password"
+            required
+          />
+        </div>
+        <button type="submit">Login</button>
+        <div class="error-cont" id="error-cont">
+          <!-- <p id="error">Lorem, ipsum dolor.</p> -->
+        </div>
+      </form>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,782 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"); */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  letter-spacing: -0.031rem;
+}
+
+.general-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  background-color: hsl(259, 80%, 41%);
+  position: relative;
+}
+
+.header {
+  width: 100%;
+  height: auto;
+  background-color: hsl(0, 0%, 96%);
+  padding: 2rem 4rem;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 0;
+}
+
+.logo-container {
+  width: fit-content;
+  height: auto;
+}
+
+.logo-container p,
+.gheader p {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: hsl(259, 80%, 41%);
+  cursor: pointer;
+}
+
+.logo-container p:hover,
+.gheader p:hover {
+  color: hsl(259, 70%, 55%);
+}
+
+/* Other pages uses this header styling */
+.other-pg-header {
+  width: 100%;
+  height: auto;
+  background-color: hsl(259, 80%, 41%);
+  padding: 2rem 4rem;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 16rem;
+}
+
+/* Background image for the index html page here >>> */
+.background-img {
+  width: 100%;
+  height: 100vh;
+  background: url("./assets/library.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.3;
+  padding: 15rem;
+}
+
+.main-container {
+  width: 50%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  row-gap: 1.5rem;
+  position: absolute;
+  top: 35%;
+}
+
+.headingss {
+  width: fit-content;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 0.4rem;
+}
+
+.headingss h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: hsl(0, 0%, 96%);
+  text-align: center;
+}
+
+.headingss i {
+  font-size: 1.3rem;
+  color: hsl(0, 0%, 96%);
+}
+
+.auth-one-container {
+  width: 80%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  row-gap: 2rem;
+  background-color: hsla(0, 0%, 96%, 0.244);
+  backdrop-filter: blur(4px);
+  border: 2px soild hsl(78, 100%, 77%);
+  border-radius: 1rem;
+  padding: 2.5rem 1rem;
+}
+
+.ask-me-cont {
+  width: fit-content;
+  height: auto;
+}
+
+.ask-me-cont h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+}
+
+.btns-container {
+  width: fit-content;
+  height: auto;
+}
+
+.btn-login {
+  color: hsl(0, 0%, 96%);
+  background-color: hsl(259, 80%, 41%);
+  border: 0.5px solid hsl(0, 0%, 88%);
+  border-radius: 0.5rem;
+  outline: none;
+  padding: 0.6rem 1.4rem;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.btn-login:hover {
+  background-color: hsl(259, 88%, 35%);
+  border: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-student {
+  color: hsl(0, 0%, 96%);
+  background-color: none;
+  border: 0.5px solid hsl(0, 0%, 96%);
+  border-radius: 0.5rem;
+  outline: none;
+  padding: 0.6rem 1.4rem;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.btn-student:hover {
+  color: hsl(0, 0%, 87%);
+  border: 0.9px solid hsl(0, 0%, 87%);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Login HTML styling >>> */
+.login-panel {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  background-color: hsl(259, 80%, 41%);
+  position: relative;
+}
+
+.gheader {
+  width: 100%;
+  height: auto;
+  background-color: hsl(0, 0%, 96%);
+  padding: 2rem 4rem;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 16rem;
+  position: relative;
+  top: 0;
+}
+
+.headings {
+  width: fit-content;
+  height: auto;
+}
+
+.headings h1 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: hsl(271, 62%, 40%);
+  text-align: center;
+}
+
+.home-link-cont {
+  width: fit-content;
+  height: auto;
+}
+
+.home-link-cont a {
+  text-decoration: none;
+  color: hsl(0, 0%, 96%);
+  background-color: hsl(355, 94%, 69%);
+  border: none;
+  border-radius: 0.5rem;
+  outline: none;
+  padding: 0.6rem 1.4rem;
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.home-link-cont a:hover {
+  background-color: hsl(355, 70%, 61%);
+  transition: all 0.3s ease-in-out;
+}
+
+.bg-img {
+  width: 100%;
+  height: 100vh;
+  background: url("./assets/login.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.3;
+  padding: 15rem;
+}
+
+.my-form {
+  width: 35%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  row-gap: 1.5rem;
+  position: absolute;
+  top: 35%;
+  background-color: hsla(0, 0%, 96%, 0.244);
+  backdrop-filter: blur(4px);
+  border: 2px soild hsl(78, 100%, 77%);
+  border-radius: 1rem;
+  padding: 2rem 2.5rem;
+}
+
+.login-icon-cont {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  row-gap: 0.5rem;
+}
+
+.login-icon-cont i {
+  font-size: 0.8rem;
+  color: hsl(0, 0%, 96%);
+}
+
+.login-icon-cont h1 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: hsl(0, 0%, 96%);
+  text-align: center;
+}
+
+.username,
+.passwrd {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 0.7rem;
+}
+
+.username label,
+.passwrd label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: hsl(0, 0%, 96%);
+}
+
+.username input,
+.passwrd input {
+  width: 100%;
+  height: auto;
+  padding: 0.7rem 0.6rem;
+  border: none;
+  outline: none;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: hsl(0, 0%, 36%);
+}
+
+.username input::placeholder,
+.passwrd input::placeholder {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: hsla(0, 0%, 45%, 0.527);
+}
+
+.username input:hover,
+.passwrd input:hover {
+  background-color: hsl(254, 95%, 92%);
+}
+
+.my-form button {
+  width: 100%;
+  height: auto;
+  padding: 0.7rem 0.6rem;
+  border: none;
+  outline: none;
+  border-radius: 0.5rem;
+  color: hsl(259, 88%, 35%);
+  font-size: 0.9rem;
+  font-weight: 700;
+  background-color: hsl(0, 0%, 96%);
+  cursor: pointer;
+}
+
+.my-form button:hover {
+  background-color: hsl(0, 0%, 88%);
+  transition: all 0.3s ease-in-out;
+  color: hsl(271, 62%, 40%);
+}
+
+.error-cont {
+  width: fit-content;
+  height: auto;
+  background-color: hsl(0, 0%, 100%);
+  padding: 0.5rem 0.9rem;
+  border-radius: 0.5rem;
+  margin: 0 auto;
+  visibility: hidden;
+}
+
+.error-cont p {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: hsl(0, 94%, 59%);
+}
+
+/* Student view HTML styling here >>> */
+.books-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  row-gap: 1rem;
+  background-color: hsl(0, 0%, 94%);
+}
+
+.other-pg-header p {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: hsl(0, 0%, 88%);
+  cursor: pointer;
+}
+
+.other-pg-header p:hover {
+  color: hsl(0, 0%, 100%);
+}
+
+.headin {
+  width: fit-content;
+  height: auto;
+}
+
+.headin h1 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: hsl(0, 0%, 88%);
+  text-align: center;
+}
+
+.card-book-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
+  column-gap: 1rem;
+  flex-wrap: wrap;
+  row-gap: 1rem;
+  padding: 2rem 4rem;
+}
+
+.cards-contss {
+  width: 30%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  row-gap: 1.2rem;
+  backdrop-filter: blur(10px);
+  background-color: hsl(0, 0%, 100%);
+  padding: 1.5rem;
+  border: 1px solid hsl(259, 80%, 41%);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.cards-contss:hover {
+  border: none;
+  border-right: 2px solid hsl(259, 80%, 41%);
+  border-bottom: 2px solid hsl(259, 80%, 41%);
+  transition: all 0.3s ease-in-out;
+}
+
+.cards-contss p {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: hsl(0, 0%, 36%);
+}
+
+/* Dashboard HTML styling here >>> */
+.dashboard-section-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  row-gap: 2.5rem;
+  background-color: hsl(0, 0%, 94%);
+}
+
+.add-logout-btn {
+  width: fit-content;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 0.7rem;
+}
+
+.add-book-btn {
+  color: hsl(259, 70%, 55%);
+  background-color: none;
+  border: none;
+  border-radius: 0.5rem;
+  outline: none;
+  padding: 0.6rem;
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.add-book-btn:hover {
+  color: hsl(259, 80%, 41%);
+  border: 0.9px solid hsl(0, 0%, 87%);
+  transition: all 0.3s ease-in-out;
+}
+
+.logout-btn {
+  color: hsl(0, 0%, 96%);
+  background-color: hsl(355, 94%, 69%);
+  border: none;
+  border-radius: 0.5rem;
+  outline: none;
+  padding: 0.6rem;
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.logout-btn:hover {
+  background-color: hsl(355, 70%, 61%);
+  transition: all 0.3s ease-in-out;
+  border: 0.9px solid hsl(0, 0%, 87%);
+}
+
+.dashboard-section {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  row-gap: 2rem;
+  padding: 0 4rem 3rem 4rem;
+}
+
+.welcome-cont {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  row-gap: 0.5rem;
+}
+
+.welcome-cont h2 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: hsl(259, 88%, 35%);
+}
+
+.welcome-cont p {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: hsl(0, 0%, 23%);
+}
+
+.all-cards-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+  column-gap: 1.3rem;
+  flex-wrap: wrap;
+  row-gap: 1.3rem;
+  padding: 1.5rem 0.5rem;
+}
+
+.cards-container-flow {
+  width: 30%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  row-gap: 1rem;
+  backdrop-filter: blur(10px);
+  background-color: hsl(0, 0%, 100%);
+  padding: 1.5rem;
+  border: 1px solid hsl(259, 80%, 41%);
+  border-radius: 0.5rem;
+}
+
+.cards-container-flow:hover {
+  border: none;
+  border-right: 2px solid hsl(259, 80%, 41%);
+  border-bottom: 2px solid hsl(259, 80%, 41%);
+  transition: all 0.3s ease-in-out;
+}
+
+.icons-cont {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  column-gap: 0.6rem;
+}
+
+.fa-pencil {
+  font-size: 0.9rem;
+  color: hsl(229, 89%, 65%);
+  cursor: pointer;
+}
+
+.fa-pencil:hover {
+  color: hsl(229, 89%, 55%);
+  transition: all 0.3s ease-in-out;
+}
+
+.fa-trash-can,
+.fa-circle-xmark {
+  font-size: 0.9rem;
+  color: hsl(0, 94%, 69%);
+  cursor: pointer;
+}
+
+.fa-trash-can:hover,
+.fa-circle-xmark:hover {
+  color: hsl(0, 94%, 59%);
+  transition: all 0.3s ease-in-out;
+}
+
+.content-div,
+.content-divs,
+.content-divss,
+.content-divsss {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  column-gap: 0.3rem;
+}
+
+.content-div h2,
+.content-divs h2,
+.content-divss h2,
+.content-divsss h2 {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: hsl(259, 88%, 35%);
+}
+
+.content-div p,
+.content-divs p,
+.content-divss p,
+.content-divsss p {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: hsl(0, 0%, 36%);
+}
+
+/* The Dashboard modal overlay sections */
+.modal-section-container {
+  background-color: hsla(0, 0%, 0%, 0.5);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+}
+
+.modal-section-container-visible {
+  background-color: hsla(0, 0%, 0%, 0.5);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  backdrop-filter: blur(3px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  visibility: visible;
+}
+
+.form-modal {
+  width: 40%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  row-gap: 1.5rem;
+  background-color: hsl(0, 0%, 94%);
+  padding: 2rem;
+  border: 1px solid hsl(259, 80%, 41%);
+  border-radius: 0.5rem;
+}
+
+.icon-word-cont {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon-word-cont h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: hsl(259, 88%, 35%);
+}
+
+.add-form {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  row-gap: 1.2rem;
+}
+
+.input-grps {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  column-gap: 0.5rem;
+}
+
+.input-grps label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: hsl(0, 0%, 31%);
+}
+
+.input-grps input {
+  width: 100%;
+  height: auto;
+  padding: 0.7rem 0.5rem;
+  border: none;
+  outline: none;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: hsl(0, 0%, 36%);
+}
+
+.input-grps input:focus {
+  background-color: hsla(258, 100%, 91%, 0.516);
+}
+
+.input-grps select {
+  width: 50%;
+  height: auto;
+  padding: 0.7rem 1rem;
+  border: none;
+  outline: none;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: hsl(0, 0%, 36%);
+}
+
+.add-form button {
+  width: 100%;
+  height: auto;
+  padding: 0.7rem 0.3rem;
+  border: none;
+  outline: none;
+  background-color: hsl(259, 80%, 41%);
+  border-radius: 0.7rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+
+.add-form button:hover {
+  color: hsl(0, 0%, 94%);
+  background-color: hsl(259, 88%, 35%);
+  /* transition: all 0.3s ease-in-out; */
+  border-bottom: 2px solid hsl(0, 94%, 69%);
+  border-right: 2px solid hsl(355, 94%, 69%);
+}
