@@ -102,6 +102,7 @@ function fetchLibraryCatalogue() {
     libraryArr = JSON.parse(localStorage.getItem(`Book Catalogue`));
   }
   renderCatalogueOnUi();
+  renderStudentView();
 }
 fetchLibraryCatalogue();
 
@@ -110,7 +111,9 @@ let editedDataIndex = null;
 
 // ...and this function render it on the UI >>>
 function renderCatalogueOnUi() {
-  renderDiv.innerHTML = ``;
+  if (renderDiv) {
+    renderDiv.innerHTML = ``;
+  }
 
   libraryArr.forEach((item, index) => {
     let bookCata = item.title;
@@ -187,7 +190,7 @@ function renderCatalogueOnUi() {
       fourthContentDiv
     );
 
-    renderDiv.append(cardFlowDiv);
+    renderDiv?.append(cardFlowDiv);
 
     // students view html part >>>>
 
@@ -211,5 +214,41 @@ function renderCatalogueOnUi() {
     // );
 
     // studentViewDiv.append(studentCardBlock);
+  });
+}
+
+// Student view html part >>>>
+
+function renderStudentView() {
+  if (studentViewDiv) {
+    studentViewDiv.innerHTML = ``;
+  }
+
+  libraryArr.forEach((item) => {
+    let bookCata = item.title;
+    let authorCata = item.author;
+    let yearCata = item.year;
+    let availaCata = item.availability;
+
+    let studentCardBlock = document.createElement(`div`);
+    studentCardBlock.classList.add(`cards-contss`);
+
+    let thePElement = document.createElement(`p`);
+    thePElement.textContent = `Title: ${bookCata}`;
+    let thePElement2 = document.createElement(`p`);
+    thePElement2.textContent = `Author: ${authorCata}`;
+    let thePElement3 = document.createElement(`p`);
+    thePElement3.textContent = `Year: ${yearCata}`;
+    let thePElement4 = document.createElement(`p`);
+    thePElement4.textContent = `Availability: ${availaCata}`;
+
+    studentCardBlock.append(
+      thePElement,
+      thePElement2,
+      thePElement3,
+      thePElement4
+    );
+
+    studentViewDiv?.append(studentCardBlock);
   });
 }
