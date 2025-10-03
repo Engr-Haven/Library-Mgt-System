@@ -76,7 +76,7 @@ addBookForm?.addEventListener(`submit`, (e) => {
     availability: libraryAvailability,
   };
 
-  // This code if for editing data in the local storage, without it, it will keep adding the edited data as a new data...nah wahala be that o >>>>
+  // This code is for editing data in the local storage, without it, it will keep adding the edited data as a new data...nah wahala be that o >>>>
   if (editedDataIndex !== null) {
     libraryArr[editedDataIndex] = libraryBookDetails;
     editedDataIndex = null;
@@ -191,29 +191,6 @@ function renderCatalogueOnUi() {
     );
 
     renderDiv?.append(cardFlowDiv);
-
-    // students view html part >>>>
-
-    // let studentCardBlock = document.createElement(`div`);
-    // studentCardBlock.classList.add(`cards-contss`);
-
-    // let thePElement = document.createElement(`p`);
-    // thePElement.textContent = `Title: ${bookCata}`;
-    // let thePElement2 = document.createElement(`p`);
-    // thePElement2.textContent = `Author: ${authorCata}`;
-    // let thePElement3 = document.createElement(`p`);
-    // thePElement3.textContent = `Year: ${yearCata}`;
-    // let thePElement4 = document.createElement(`p`);
-    // thePElement4.textContent = `Availability: ${availaCata}`;
-
-    // studentCardBlock.append(
-    //   thePElement,
-    //   thePElement2,
-    //   thePElement3,
-    //   thePElement4
-    // );
-
-    // studentViewDiv.append(studentCardBlock);
   });
 }
 
