@@ -13,6 +13,7 @@ let addBookYearInput = document.getElementById(`year`);
 let addBookAvailabilityInput = document.getElementById(`availability`);
 let renderDiv = document.getElementById(`all-cards-container`);
 let studentViewDiv = document.getElementById(`card-book-container`);
+let togglePassword = document.getElementById(`toggle-passwrd`);
 
 // It's either i use anchor tag <a href="..." /a> or a btn, then use it in JS below >>>
 logoutBtn?.addEventListener(`click`, () => {
@@ -37,6 +38,21 @@ loginForm?.addEventListener(`submit`, (e) => {
 
     loginForm.reset();
     loginUsernameInput.focus();
+  }
+});
+
+// This is for toggling the password visibility >>>
+
+togglePassword?.addEventListener(`click`, () => {
+  let passWrdBoolean = loginPassWrdInput.type === `password`;
+
+  if (passWrdBoolean) {
+    loginPassWrdInput.type = `text`;
+    togglePassword.classList.add(`fa-regular`, `fa-eye-slash`);
+  } else {
+    loginPassWrdInput.type = `password`;
+    togglePassword.classList.remove(`fa-regular`, `fa-eye-slash`);
+    togglePassword.classList.add(`fa-regular`, `fa-eye`);
   }
 });
 
