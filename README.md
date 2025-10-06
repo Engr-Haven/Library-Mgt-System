@@ -37,4 +37,4 @@
 ## PROJECT LINKS
 
 - [GitHub Repository](https://github.com/Engr-Haven/Library-Mgt-System)
-- [Live Demo]()
+- [Live Demo](https://library-mgt-system.vercel.app/)
